@@ -1,0 +1,29 @@
+.profil {
+    button {
+        width: 186px;
+        height: 45px;
+        box-sizing: border-box;
+        border: 1px solid rgb(219, 225, 237);
+        border-radius: 45px;
+        &:hover {
+            background: linear-gradient(to right, #cb202d, #dc1e28, #3366cc); 
+            color: white;
+        }
+    }
+
+    img {
+        margin-right: 11px;
+    }
+
+    a {
+        color: rgb(61, 66, 73);
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 125%;
+        letter-spacing: 0%;
+        text-align: center;
+        text-decoration: none;
+    }
+
+}

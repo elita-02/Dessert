@@ -1,0 +1,120 @@
+
+.emmail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .email_card {
+        margin-top: 56px;
+        margin-bottom: 208px;
+        width: 507px;
+        height: 659px;
+        border-radius: 16px;
+        background: rgb(255, 255, 255);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        // align-items: center;
+
+        h1 {
+            color: rgb(25, 25, 25);
+            font-family: Playfair Display;
+            font-size: 30px;
+            font-weight: 800;
+            line-height: 40px;
+            margin-top: 30px;
+        }
+
+        p {
+            color: rgb(140, 149, 163);
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 125%;
+            letter-spacing: 0%;
+            text-align: center;
+            margin-bottom: 36px;
+        }
+
+        .In input {
+            border: 1px solid grey;
+            width: 100%;  
+            max-width: 420px; 
+            height: 50px;
+            border-radius: 56px;
+            margin-bottom: 18px;
+            padding-left: 27px;
+        }
+
+        .continue_button button {
+            width: 420px; 
+            height: 50px;
+            border-radius: 56px;
+            border: none;
+            color: white;
+            background-color: rgb(161, 99, 65);
+            cursor: pointer;
+            margin-bottom: 28px;
+            &:hover {
+                background: linear-gradient(to right, #cb202d, #dc1e28, #3366cc); 
+                color: white;
+            }
+        }
+
+        .syz {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 36px;
+            p {
+                color: rgb(76, 108, 145);
+                font-size: 14px;
+                font-weight: 400;
+                margin: 0 10px;
+            }
+        }
+
+        .kan {
+            margin-bottom: 38px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .email_card {
+            width: 300px; 
+            height: 576px; 
+        }
+
+        .In input {
+            width: 271px;  
+        }
+
+        button {
+            width: 271px;
+        }
+
+        .syz {
+            margin-bottom: 20px;  
+        }
+
+        .kan {
+            margin-bottom: 20px;  
+        }
+    }
+
+    @media (min-width: 768px) {
+        .email_card {
+            width: 507px;  
+            height: 659px; 
+        }
+
+        .In input {
+            width: 420px; 
+        }
+
+        .continue_button button {
+            width: 420px; 
+        }
+    }
+}

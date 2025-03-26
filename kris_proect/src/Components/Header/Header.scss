@@ -1,19 +1,21 @@
-.header{
+.header {
     display: flex;
     height: 90px;
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px 6px 22px 0px rgba(219, 30, 30, 0.03);
     background: rgb(255, 255, 255);
-   nav ul{
+
+    nav ul {
         display: flex;
         list-style: none;
         gap: 20px;
         padding-top: 13px;
         margin-right: 162px;
     }
-    li{
-        a{
+
+    li {
+        a {
             text-decoration: none;
             color: rgb(61, 66, 73);
             font-family: Inter;
@@ -22,18 +24,71 @@
             line-height: 125%;
             letter-spacing: 0%;
             text-align: center;
+            position: relative; 
         }
-        &:hover{
+
+        &:hover {
             color: rgb(161, 99, 65);
             transform: scale(1.1);
             transition: 0.3s;
             opacity: 0.8;
-            text-decoration: underline wavy  rgb(220, 203, 21);
-            text-decoration-line:overline ;
-            border-bottom: 3px solid;
+            text-decoration: underline wavy rgb(220, 203, 21);
+            
             border-bottom: 3px solid;
             border-image: linear-gradient(to right, red, yellow) 1;
         }
+    }
+}
 
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+@media (max-width: 767px) {
+    .header {
+        width: 375px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .header-right {
+        display: flex;
+        gap: 10px;
+    }
+
+    .profil button, .burger button {
+        width: 45px;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .profil a, .burger .catalog-link {
+        display: none;
+    }
+
+    .desktop-catalog {
+        display: none;
+    }
+
+    .mobile-catalog {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .desktop-catalog {
+        display: block;
+    }
+
+    .mobile-catalog {
+        display: none;
+    }
+
+    nav {
+        display: flex;
     }
 }

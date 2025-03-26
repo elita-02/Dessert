@@ -7,8 +7,9 @@ import Layout from "./Components/Layout/Layout";
 import Catalog from "./pages/catalog/Catalog";
 import Profile from "./pages/profile/Profile";
 import Vakansy from "./pages/vacansy/Vakansy";
+import Emmail from "./pages/Emmail/Emmail";
+import Cal from "./pages/Cal/Cal";
 
- 
  export const myRouter = createBrowserRouter([
     {path: "/",
     element: <Layout/>,
@@ -41,6 +42,14 @@ import Vakansy from "./pages/vacansy/Vakansy";
        {
            path: "profile",
            element: <Profile/>
+       },
+       {
+           path: "/emmail",
+           element: <Emmail/>
+       },
+       {
+           path: "/cal",
+           element: <Cal/>
        },
     
     ]

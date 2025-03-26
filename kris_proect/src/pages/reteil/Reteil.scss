@@ -1,0 +1,139 @@
+.glava h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Playfair Display;
+    font-weight: 800;
+    font-size: 30px;
+    margin-top: 30px;
+
+
+
+}
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    width: calc(50% - 20px);
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-family: "Segoe UI", sans-serif;
+    display: flex;
+    flex-direction: column;
+  
+    .card-image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  
+    .card-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px;
+  
+      .left {
+        .title {
+          font-size: 20px;
+          font-weight: bold;
+          margin: 0;
+        }
+  
+        .address {
+          font-size: 14px;
+          color: #555;
+        }
+  
+        .time {
+          font-size: 13px;
+          color: #777;
+        }
+      }
+  
+      .reserve-btn {
+        padding: 10px 16px;
+        border: 1px solid #c49e7b;
+        background: none;
+        border-radius: 12px;
+        color: #c49e7b;
+        font-size: 13px;
+        cursor: pointer;
+        transition: all 0.3s;
+  
+        &:hover {
+          background-color: #f3e8df;
+        }
+      }
+    }
+  }
+  
+
+  @media (max-width: 355px) {
+    .glava h1 {
+      font-size: 26px;
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      padding: 25px;
+    }
+  
+    .card {
+      width: 100%;
+      max-width: 350px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      border-radius: 20px;
+  
+      .card-image {
+        width: 100%;
+        max-width: 300px;
+      }
+  
+      .card-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+  
+        .left {
+          .title {
+            font-size: 22px;
+          }
+  
+          .address {
+            font-size: 16px;
+          }
+  
+          .time {
+            font-size: 14px;
+          }
+        }
+  
+        .reserve-btn {
+          width: 100%;
+          font-size: 16px;
+          padding: 14px;
+          margin-top: 12px;
+          border-radius: 14px;
+        }
+      }
+    }
+  }
+  

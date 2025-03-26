@@ -1,29 +1,56 @@
+
 .profil {
     button {
         width: 186px;
         height: 45px;
-        box-sizing: border-box;
         border: 1px solid rgb(219, 225, 237);
         border-radius: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 15px;
+        transition: all 0.3s ease;
+        background: transparent;
+        cursor: pointer;
+
         &:hover {
-            background: linear-gradient(to right, #cb202d, #dc1e28, #3366cc); 
-            color: white;
+            background: linear-gradient(to right, #cb202d, #dc1e28, #3366cc);
+            border-color: transparent;
+            
+            a { color: white; }
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+            margin-right: 11px;
+            flex-shrink: 0;
+        }
+
+        a {
+            color: rgb(61, 66, 73);
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            white-space: nowrap;
         }
     }
+}
 
-    img {
-        margin-right: 11px;
+@media (max-width: 767px) {
+    .header-right {
+        display: flex;
+        gap: 10px; 
     }
 
-    a {
-        color: rgb(61, 66, 73);
-        font-family: Inter;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 125%;
-        letter-spacing: 0%;
-        text-align: center;
-        text-decoration: none;
+    .profil button, .burger button {
+        width: 45px;
+        padding: 0;
+        justify-content: center;
     }
 
+    .profil a, .burger .catalog-link {
+        display: none; 
+    }
 }
